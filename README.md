@@ -2,7 +2,7 @@
 
 ## Dataset
 
-Dataset is from [OpenDataSoft](https://public.opendatasoft.com/explore/dataset/air-bnb-listings/information/?disjunctive.neighbourhood&disjunctive.column_10&disjunctive.city) which can be downloaded [here](https://data.insideairbnb.com/united-states/ny/new-york-city/2024-04-06/visualisations/listings.csv).
+Dataset is from [OpenDataSoft](https://public.opendatasoft.com/explore/dataset/air-bnb-listings/information/?disjunctive.neighbourhood&disjunctive.column_10&disjunctive.city) which can be downloaded [here](https://data.insideairbnb.com/united-states/ny/new-york-city/2024-04-06/data/listings.csv.gz).
 
 An alternative dataset can also be obtained from [Kaggle](https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data).
 
