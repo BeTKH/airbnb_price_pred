@@ -96,7 +96,7 @@ G-boost with hyper-parameters:
 
 ![Model Comparison](visuals/gbh.png)
 
-# How to run this project
+### How to run this project
 
 - create pipenv virtual environment and install dependencies
 
