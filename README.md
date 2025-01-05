@@ -4,21 +4,25 @@
 
 This project aims to predict Airbnb listing prices in New York City using various regression models. The goal is to predict the price of a listing based on features such as property type, neighborhood, and availability. The project includes exploratory data analysis (EDA), feature engineering, model training, and performance evaluation.
 
-### Key Highlights:
+### Insights:
+
+- The Gradient Boosting model provides the best predictive accuracy, making it ideal for predicting Airbnb prices.
+- The other models also provided valuable insights into feature relationships but were less accurate.
+
+### Highlights:
 
 - **Dataset**: Airbnb listings data for New York City, containing information about listing features, pricing, and location.
-- **Objective**: Predict the price of Airbnb listings based on various factors.
 - **Models Evaluated**: Linear Regression, K-Nearest Neighbors (KNN), Random Forest, and Gradient Boosting.
 
 ## Tools & Technologies Used
 
 - **Programming Language**: Python
 - **Libraries**:
-  - **Pandas**: Data manipulation and preprocessing
-  - **Matplotlib & Seaborn**: Visualization of data and model results
-  - **Scikit-learn**: Machine learning algorithms and performance metrics
-  - **XGBoost**: Gradient Boosting model implementation
-  - **Jupyter Notebooks**: For EDA and model development
+  - **Pandas**:
+  - **Matplotlib & Seaborn**:
+  - **Scikit-learn**:
+  - **XGBoost**:
+  - **Jupyter Notebooks**:
   - **Pipenv**: Dependency management (using `Pipfile` and `Pipfile.lock`)
 
 ## Dataset
@@ -50,34 +54,63 @@ The following regression models were evaluated:
 | **Random Forest**       | 35.396   | +0.091        | Moderate performance, reasonable rMSE, positive R-squared.                        |
 | **Gradient Boosting**   | 34.333   | +0.118        | Best performance with lowest rMSE and highest R-squared, indicating superior fit. |
 
-### Key Insights:
+## EDA - Visualizations
 
-- The Gradient Boosting model provides the best predictive accuracy, making it ideal for predicting Airbnb prices.
-- The other models also provided valuable insights into feature relationships but were less accurate.
+Top 20 neighborhoods in New York:
 
-## Visualizations
+![Model Comparison](visuals/image.png)
 
-### 1. Model Performance Comparison
+Room Types:
 
-![Model Comparison](outputs/steps.png)
-This visualization compares the RMSE values of various models, highlighting the superior performance of Gradient Boosting.
+![Model Comparison](visuals/roomType.png)
 
-### 2. Price Distribution
+Price Distribution:
 
-![Price Distribution](content/New_York_City_.png)
-A distribution plot of Airbnb prices in New York City, showcasing the price variation across different listings.
+![Model Comparison](visuals/priceDist.png)
 
-### 3. Interactive Heat Map
+Price Distribution by Room:
 
-![NYC Airbnb Heat Map](outputs/nyc_airbnb_costs.html)
-An interactive map showing the geographical distribution of Airbnb listings across New York City.
+![Model Comparison](visuals/priceRoom.png)
+
+Price Distribution by Neighbourhood:
+
+![Model Comparison](visuals/priceNeig.png)
+
+## Regression - Visualizations
+
+Linear Reg:
+
+![Model Comparison](visuals/linerReg.png)
+
+K-nearest and Support vector:
+
+![Model Comparison](visuals/kn.png)
+
+Random Forest and G-boost:
+
+![Model Comparison](visuals/rf.png)
+
+## Hyper-parameter Tuning
+
+G-boost with hyper-parameters:
+
+![Model Comparison](visuals/gbh.png)
 
 # How to run this project
 
 - create pipenv virtual environment and install dependencies
 
   ```bash
-  pip install pipenv
-  ```
 
-- run jupyter notebook within pipenv
+  #create virtaul env
+  pip install pipenv
+
+  # activate
+  pip env shell
+
+  # install dependencies:
+  pipenv install
+
+  #run jupyter
+  jupyter notebook
+  ```
